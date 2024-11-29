@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="task4.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <title>portofolio</title>
+    </head>
+    <body>
+        <section class="welcome" id="home">
+            <div class="container">
+                <nav class="navbar">
+                    <ul id="navLinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#inter">Internship</a></li>
+                        <li><a href="note.html">Note</a></li>
+                        <li><a href="Product.html">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" onclick="toggleNavbar()">☰</div>
+                </nav>
+                <div class="row">
+                    <div class="col-sm-6 wel">
+                        <header>
+                            <h3 class="hello">Hello</h3>
+                            <h1 class="name ">I'm Neethu Panta</h1>
+                            <p>Seeking for an Exciting offer to Prove my Skills........!</p>
+                            <a style="color: rgb(235, 12, 67);" href="#welco">See More</a>
+                        </header>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="Assets/sar.jpeg" alt="neethu" class="Neethu">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="welcome1" id="welco">
+            <div class="container">
+                <h2 style="color:darkred;" class="font-effect-neon"><u >Welcome to my <b>portofolio</u></b></h2>
+                <div style="text-align: center;" class="intro">
+                    <p>"Hello, I'm Neethu Panta, currently pursuing my <b style="color: black;">Master's in Computer Applications</b> 
+                        (MCA) at Sri Padmavati Mahila Visvavidyalayam, Tirupati. Recently, I honor to express that 
+                       elected as the class representative for our dept of Computer Science , where I focus on 
+                        enhancing communication and collaboration between students and faculty.
+                    </p>
+                    <p>I successfully developed and deployed a website for the 
+                          <b style="color: black;">NIRBHAYA Women's Safety Device (NWSd) Startup,</b> utilizing technologies like HTML5,
+                           CSS, and JavaScript to create responsive web pages.
+                    </p>
+                    <p>Additionally, I have completed a <b style="color: black;">Digital Markting in the Epixs Media,
+		</b> as well as certifications on edX related to Java programming
+                        and web development. I also attended a communication skills enhancement program 
+                        conducted by the Naandi Foundation, which helped me refine my interpersonal and 
+                        professional communication abilities.
+                    </p>
+                    <p>I am a quick learner who is always eager to take on new challenges and develop 
+                        innovative solutions. Thank you for the opportunity to introduce myself."
+                    </p>
+                </div>                    
+            </div>
+                
+
+            </div>
+    </section>
+    <section class="skills" id="skill">
+        <div class="container">
+                <div>
+                    <h2 style="color: darkred;" class="font-effect-neon"><u>My Skills</u></h2>
+                        <h3>Core Java</h3>
+                        <h3>HTML</h3>                           
+                        <h3>CSS</h3>                            
+                        <h3>JavaScript</h3>
+                        <h3>MySQL</h3>
+                </div>
+        </div>
+    </section>
+    <section class="intern" id="inter">
+        <div class="container">
+                <div>
+                    <h2 style="color:darkred;" class="font-effect-neon"><u>Internships</u></h2>
+                    <h3 style="text-align: center;color: black;">Web Development Internship at Apex Planet Software Pvt Ltd</h3>
+                    <p style="text-align: center;"><b>Duration: </b>October 20, 2024 – December 4, 2024<br>
+                        <b>Role:</b> Web Development Intern<br>
+                        <b>Technologies Used: </b>HTML, CSS, JavaScript<br>
+                        </p>
+                        <h3 style="text-align: center;color: black;"> NIRBHAYA Women's Safety Device (NWSd) Website</h3>
+                        <p style="text-align: center;"><b>Project:</b>NWSd Startup Website<br>
+                            <b>Technologies Used:</b>HTML5, CSS, Bootstrap 4.0, JavaScript<br>
+                            <p style="text-align: center;">
+                                This project gave me invaluable experience in collaborating within a team
+                                 environment while taking ownership of specific sections of a live website.
+                                  It also allowed me to apply my web development skills in a real-world scenario, 
+                                  contributing to a meaningful cause.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <form id="contact-form">
+            <h2 style="color: black;">Contact Me</h2>
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" onclick="myFunction()">Send Message</button>
+        </form>
+    </section>
+    <script src="task4.js"></script>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+body {
+    font-family: "Audiowide", sans-serif;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 0px;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+    position:sticky;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color:black;
+}
+.navbar .hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color:#ffff;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+}
+p{
+    font-size: 16px;
+}
+h2{
+    text-align: center;
+
+}
+.hello{
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+.welcome{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    height: 100vh;    
+}
+.wel{
+    color: white;
+    padding: 15%;
+    text-align: center;
+}
+
+.name{
+    font-weight: bold;
+}
+.Neethu{
+    padding: 100px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 80%;
+    height: 70%;
+}
+@media (max-width: 1024px) {
+    .Neeethu {
+        padding: 150px 80px;
+        border-top-left-radius: 45%;
+        border-top-right-radius: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .Neethu {
+        padding: 120px 60px;
+        border-top-left-radius: 40%;
+        border-top-right-radius: 40%;
+    }
+}
+@media (max-width: 480px) {
+    .Neethu{
+        padding:  40px;
+        border-top-left-radius: 35%;
+        border-top-right-radius: 35%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .Neethu {
+        padding: 0px 20px;
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.welcome1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(95, 95, 139);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;    
+    padding: 20px;
+    height: auto;
+}
+.intro{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+}
+.skills{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background-image: url('Assets/bg4.jpeg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    height: 60vh;  
+    color: white;
+    text-align: center;
+}
+.intern{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(71, 84, 109);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: white;
+}
+#contact {
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+    background-image: url('Assets/bg4.jpeg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;   
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 100px; 
+    text-align: right;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        text-align: left;
+        width: auto;
+    }
+}
+
+
+.app {
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.btn1 {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li1 {
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: #ff4c4c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+.ap{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background-image: url('Assets/BG4.jpeg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+}
